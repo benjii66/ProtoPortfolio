@@ -79,7 +79,6 @@
             background: transparent;
             outline: none;
             position: relative;
-            border: 2px solid #fcfcfc;
             padding: 15px 50px;
             overflow: hidden;
             cursor: pointer;
@@ -104,6 +103,8 @@
         }
         .hover-me{
             transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            color:inherit
         }
         :hover .hover-me{
             opacity: 0;

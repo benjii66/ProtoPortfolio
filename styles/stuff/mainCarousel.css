@@ -76,7 +76,6 @@ main .item .content button {
   background: transparent;
   outline: none;
   position: relative;
-  border: 2px solid #fcfcfc;
   padding: 15px 50px;
   overflow: hidden;
   cursor: pointer;
@@ -101,6 +100,8 @@ main .item .content :hover::before {
 }
 main .item .content .hover-me {
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
 }
 main .item .content :hover .hover-me {
   opacity: 0;

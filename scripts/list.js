@@ -29,13 +29,15 @@ export const createList = ()=> {
   
     const buttonElement = document.createElement('button');
     buttonElement.setAttribute('data-hover', 'Click me !');
+
     
     const anchorElement = document.createElement('a');
     anchorElement.className = 'hover-me';
     anchorElement.textContent = 'Read More';
-    anchorElement.style.textDecoration = 'none';
-    anchorElement.style.color = 'inherit';
-    anchorElement.setAttribute('href', '#');
+    anchorElement.setAttribute('href', '#static-link');
+
+    console.log(anchorElement);
+
     
 
     buttonElement.appendChild(anchorElement);
@@ -66,4 +68,5 @@ export const createList = ()=> {
     mainElement.insertBefore(ulElement, document.querySelector('.nav'));
     mainElement.appendChild(navElement);
     document.body.appendChild(mainElement);
+
 }
